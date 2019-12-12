@@ -1,34 +1,51 @@
-import React, { useState } from "react";
-import { Modal, Form, Select, Input, Button } from "antd";
+import React from "react";
 
-import style from "./index.scss";
+import style from "./index.module.scss";
 
-import logo from "../../static/images/logo.png";
+import logo from "../../static/images/logo@2x.png";
+import facebook from "../../static/images/FaceBook@2x.png";
+import ins from "../../static/images/ins@2x.png";
+import youtube from "../../static/images/you-tube@2x.png";
 
 const ClientIndex = props => {
   return (
     <>
-      <header className={style.header}>
+      <header className={style.header}></header>
+      <section className={style.main}>
         <div className={style.inner}>
-          <ul className={style.log_bar}>
+          <h4 className={style.title}>EDUDRIFT</h4>
+          <p className={style.text}>
+            You can follow the latest developments of edurift through these
+            Networks
+          </p>
+          <ul className={style.list}>
             <li>
-              <img className={style.log} src={logo} alt="" />
+              <a
+                href="https://www.facebook.com/edudrift.official"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img src={facebook} alt="" />
+                <p>Facebook</p>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/edudrift.official"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img src={ins} alt="" />
+                <p>Instagram</p>
+              </a>
+            </li>
+            <li>
+              <img src={youtube} alt="" />
+              <p>YouTube</p>
             </li>
           </ul>
-          <h3 className={style.header_h3}>List your Event on EduDrift</h3>
-          <p className={style.header_p}>
-            Expand your admission pool by listing your event for free on
-            EduDrift.
-          </p>
-          <a className={style.header_btn}>LIST YOUR EVENT</a>
         </div>
-      </header>
-      <footer className={style.footer}>
-        <p>
-          EduDrift Pte. Ltd. (Singapore) Company Registration Number: 201830263E
-          Email:partners@edudrift.com
-        </p>
-      </footer>
+      </section>
     </>
   );
 };
