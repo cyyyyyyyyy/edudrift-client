@@ -1,12 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import ClinetIndex from '../views/client-index';
+import ClientIndex from "../views/client-index";
+import Home from "../views/home";
 
 const Routes = () => (
   <Router>
     <Switch>
-      <Route path="/" component={ClinetIndex} />
+      <Route path="/store" component={Home} />
+      <Route path="/" component={ClientIndex} />
     </Switch>
   </Router>
 );
