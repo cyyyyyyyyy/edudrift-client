@@ -1,7 +1,7 @@
 .header_h3 {
   font-size: 64px;
   font-weight: bold;
-  padding: 180px 0 12px 0;
+  padding: 120px 0 12px 0;
   color: #fff;
 }
 
@@ -11,7 +11,7 @@
   color: rgba(255, 255, 255, 1);
   line-height: 94px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  padding-top: 120px;
+  padding-top: 100px;
 }
 
 .header_p {
@@ -47,18 +47,34 @@
   overflow: hidden;
   background: url("../../static/images/singapore.png") no-repeat 100% 100%;
   background-size: cover;
+  overflow-y:auto;
+}
+
+.inner {
+  overflow: hidden;
 }
 
 .title {
   font-weight: 700;
   font-size: 32px;
   padding: 45px 0;
+  color: #fff;
+}
+
+.text_list {
+  width: 1000px;
+  display: flex;
+  color: #fff;
+  margin: 0 auto;
+  > li {
+    text-align: center;
+    width: 500px;
+  }
 }
 
 .text {
-  font-size: 32px;
-  width: 680px;
-  margin: 0 auto;
+  font-size: 24px;
+  height: 100px;
 }
 
 .list {
@@ -73,7 +89,7 @@
   }
   p {
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.5);
+    color: #fff;
     line-height: 20px;
     font-size: 14px;
     padding-top: 12px;
@@ -93,4 +109,13 @@
 
 .btn:hover {
   color: #fff;
+}
+
+.comp_list {
+  margin: 0 auto;
+  width: 800px;
+  img {
+    display: block;
+    padding: 20px 0;
+  }
 }
