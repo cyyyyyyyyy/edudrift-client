@@ -6,8 +6,6 @@ import logo from "../../static/images/logo@2x.png";
 import facebook from "../../static/images/FaceBook@2x.png";
 import ins from "../../static/images/ins@2x.png";
 import youtube from "../../static/images/you-tube@2x.png";
-import compImg1 from '../../static/images/png-1.png'
-import compImg2 from '../../static/images/png-2.png'
 
 const ClientIndex = props => {
   return (
@@ -17,8 +15,11 @@ const ClientIndex = props => {
           <div className={style.log}>
             <img src={logo} alt="" />
           </div>
-          <h2 className={style.h2}>To Be Launched March!</h2>
+          <h2 className={style.h2}>Launching Soon in March!</h2>
           <h4 className={style.title}>EDUDRIFT</h4>
+          <p className={style.title} style={{ padding: "10px 0 40px 0" }}>
+            Global Education Marketplace & Ticketing Platform
+          </p>
           <ul className={style.text_list}>
             <li>
               <p className={style.text}>
@@ -73,10 +74,6 @@ const ClientIndex = props => {
               </a>
             </li>
           </ul>
-          <footer className={style.comp_list}>
-            <img src={compImg1}/>
-            <img src={compImg2}/>
-          </footer>
         </div>
       </section>
     </>

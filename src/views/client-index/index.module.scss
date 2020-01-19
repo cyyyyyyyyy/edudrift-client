@@ -47,7 +47,7 @@
   overflow: hidden;
   background: url("../../static/images/singapore.png") no-repeat 100% 100%;
   background-size: cover;
-  overflow-y:auto;
+  overflow-y: auto;
 }
 
 .inner {
@@ -66,15 +66,16 @@
   display: flex;
   color: #fff;
   margin: 0 auto;
+  padding-bottom: 20px;
   > li {
     text-align: center;
-    width: 500px;
+    width: 600px;
   }
 }
 
 .text {
   font-size: 24px;
-  height: 100px;
+  height: 120px;
 }
 
 .list {
